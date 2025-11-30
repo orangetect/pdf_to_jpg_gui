@@ -1,8 +1,8 @@
-# PDF 转 JPG 工具
+# PDF to JPG Converter
 
-🌐 其他语言版本：[English](README.md)
+🌐 Languages:  
+[English](docs/en/README_EN.md) | [中文](docs/zh/README.md)
 
-...
 
 # 🇨🇳 中文 README（Simplified Chinese）
 
