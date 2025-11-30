@@ -48,7 +48,7 @@ Supports page selection, batch export, and is easy to use via GUI.
 ## 🖼 Screenshot
 
 
-![image](https://github.com/orangetect/pdf_to_jpg_gui/blob/main/Images/124050.png)
+![image](https://github.com/orangetect/pdf_to_jpg_gui/blob/main/assets/124050.png)
 
 
 ---
