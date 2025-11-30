@@ -1,3 +1,11 @@
+# PDF to JPG Converter
+
+A simple and efficient tool for converting PDF pages to JPG images.
+
+[中文](README_zh.md) | **English**
+
+---
+
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.12+-blue?logo=python">
   <img src="https://img.shields.io/badge/License-MIT-green">
