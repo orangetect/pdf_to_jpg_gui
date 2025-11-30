@@ -1,80 +1,80 @@
-# PDF to JPG Converter
+ PDF to JPG Converter
 
 A simple and efficient tool for converting PDF pages to JPG images.
 
-[中文](README_zh.md) | **English**
-
----
+[中文](README_zh.md) | English
 
 
-# 🇬🇧 English Version
 
-# 🧰 PDF to JPG Converter
+
+ 🇬🇧 English Version
+
+ 🧰 PDF to JPG Converter
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.12+-blue?logo=python">
-  <img src="https://img.shields.io/badge/License-MIT-green">
-  <img src="https://img.shields.io/badge/GUI-Tkinter-yellow">
-  <img src="https://img.shields.io/badge/Build-PyInstaller-orange">
+  <img src="https://img.shields.io/badge/Python3.12+blue?logo=python">
+  <img src="https://img.shields.io/badge/LicenseMITgreen">
+  <img src="https://img.shields.io/badge/GUITkinteryellow">
+  <img src="https://img.shields.io/badge/BuildPyInstallerorange">
 </p>
 
-A lightweight desktop application based on **Python + Tkinter** that converts PDF pages into high-quality JPG images.
+A lightweight desktop application based on Python + Tkinter that converts PDF pages into highquality JPG images.
 Supports page selection, batch export, and is easy to use via GUI.
 
----
 
-## 📚 Table of Contents
 
-* [Features](#features)
-* [Screenshot](#screenshot)
-* [Usage](#usage)
-* [Custom Page Selection](#custom-page-selection)
-* [Build EXE](#build-exe)
-* [Project Structure](#project-structure)
-* [Dependencies](#dependencies)
-* [Release Notes](#release-notes)
-* [License](#license)
-* [Author](#author)
+ 📚 Table of Contents
 
----
+ [Features](features)
+ [Screenshot](screenshot)
+ [Usage](usage)
+ [Custom Page Selection](custompageselection)
+ [Build EXE](buildexe)
+ [Project Structure](projectstructure)
+ [Dependencies](dependencies)
+ [Release Notes](releasenotes)
+ [License](license)
+ [Author](author)
 
-## 🌟 Features
+
+
+ 🌟 Features
 
 ✔ Convert PDFs to JPG images
-✔ Supports custom page ranges (e.g., `1,3,5-8`)
-✔ High-quality PDF rendering
-✔ Easy-to-use Tkinter GUI
+✔ Supports custom page ranges (e.g., `1,3,58`)
+✔ Highquality PDF rendering
+✔ Easytouse Tkinter GUI
 ✔ Fully offline
 ✔ Can be packaged into a Windows EXE
 
----
 
-## 🖼 Screenshot
+
+ 🖼 Screenshot
 
 ```
 ![App Screenshot](assets/screenshot.png)
 ```
 
----
 
-## 🚀 Usage
 
-### Method 1: Use the prebuilt EXE
+ 🚀 Usage
+
+ Method 1: Use the prebuilt EXE
 
 1. Download the latest release from GitHub
 2. Run the `.exe` file
 3. Select your PDF
 4. Choose output folder
-5. Click **Start**
+5. Click Start
 
----
 
-### Method 2: Run from source
+
+ Method 2: Run from source
 
 Install dependencies:
 
 ```bash
-pip install -r requirements.txt
+pip install r requirements.txt
 ```
 
 Run:
@@ -83,32 +83,32 @@ Run:
 python pdf_to_jpg_gui.py
 ```
 
----
 
-## 🔢 Custom Page Selection
+
+ 🔢 Custom Page Selection
 
 | Input      | Meaning        |
-| ---------- | -------------- |
+|  |  |
 | `1`        | Page 1         |
-| `1-6`      | Pages 1 to 6   |
+| `16`      | Pages 1 to 6   |
 | `3,7,10`   | Specific pages |
-| `2,5-8,12` | Mixed format   |
+| `2,58,12` | Mixed format   |
 | `all`      | All pages      |
 
----
 
-## 📦 Build EXE
+
+ 📦 Build EXE
 
 ```bash
-pyinstaller -F -w -i icon.ico -n "PDFtoJPG" pdf_to_jpg_gui.py
+pyinstaller F w i icon.ico n "PDFtoJPG" pdf_to_jpg_gui.py
 ```
 
----
 
-## 📁 Project Structure
+
+ 📁 Project Structure
 
 ```
-pdf-to-jpg-converter/
+pdftojpgconverter/
  ├── pdf_to_jpg_gui.py
  ├── requirements.txt
  ├── README.md
@@ -117,52 +117,41 @@ pdf-to-jpg-converter/
  └── assets/
 ```
 
----
 
-## 📄 Dependencies
 
-* PyMuPDF
-* Pillow
-* Tkinter (built-in)
+ 📄 Dependencies
 
----
+ PyMuPDF
+ Pillow
+ Tkinter (builtin)
 
-## 📦 Release Notes
+
+
+ 📦 Release Notes
 
 Release notes may include:
 
-* New feature: custom page selection
-* Improved PDF rendering speed
-* Bug fixes
-* UI improvements
+ New feature: custom page selection
+ Improved PDF rendering speed
+ Bug fixes
+ UI improvements
 
 Downloads:
 
-* **EXE build**
-* **Source code (.zip / .tar.gz)**
+ EXE build
+ Source code (.zip / .tar.gz)
 
----
 
-## 📄 License
+
+ 📄 License
 
 MIT License
 
----
 
-## 👨‍💻 Author
 
-**orangetect**
+ 👨‍💻 Author
+
+orangetect
 GitHub: [https://github.com/orangetect](https://github.com/orangetect)
 
 If this project helped you, please give it a ⭐ Star!
-
----
-
-如需我帮你：
-
-📌 生成 GitHub 仓库首页徽章（动态版本号）
-📌 自动生成 `CHANGELOG.md`
-📌 生成 GitHub Release 草稿
-📌 生成多语言 README（中文繁体、日语、韩语…）
-
-随时告诉我！
