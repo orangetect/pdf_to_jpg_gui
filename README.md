@@ -49,7 +49,7 @@
 
 ## 🖼️ 软件界面截图
 
-` `
+` ![image](https://github.com/orangetect/pdf_to_jpg_gui/blob/main/Images/124050.png)`
 
 
 ---
