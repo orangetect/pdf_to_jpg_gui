@@ -6,6 +6,14 @@
 
 ---
 
+# PDF 转 JPG 工具
+
+一个简单高效的 PDF 页面转 JPG 图片工具。
+
+**中文** | [English](README.md)
+
+---
+
 一个基于 **Python + Tkinter** 的桌面应用工具，可将 PDF 文档快速转换为 JPG 图片。支持自定义页码导出、批量转换、可视化操作。
 
  📚 目录（Table of Contents）
