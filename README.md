@@ -49,11 +49,9 @@
 
 ## 🖼️ 软件界面截图
 
-（你可以把图片放到 `assets/screenshot.png`）
+`<img width="996" height="774" alt="图片" src="https://github.com/user-attachments/assets/a4390d6c-6c4e-45ae-ba4c-c70f802e2e64" />
+`
 
-```
-![软件界面示例](assets/screenshot.png)
-```
 
 ---
 
