@@ -1,114 +1,116 @@
- PDF to JPG Converter
+# PDF 转 JPG 工具
 
-A simple and efficient tool for converting PDF pages to JPG images.
+🌐 其他语言版本：[English](README.md)
 
-[中文](README_zh.md) | English
+...
 
+# 🇨🇳 中文 README（Simplified Chinese）
 
-
-
- 🇬🇧 English Version
-
- 🧰 PDF to JPG Converter
+# 🧰 PDF 转图片工具（PDF to JPG Converter）
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python3.12+blue?logo=python">
-  <img src="https://img.shields.io/badge/LicenseMITgreen">
-  <img src="https://img.shields.io/badge/GUITkinteryellow">
-  <img src="https://img.shields.io/badge/BuildPyInstallerorange">
+  <img src="https://img.shields.io/badge/Python-3.12+-blue?logo=python">
+  <img src="https://img.shields.io/badge/License-MIT-green">
+  <img src="https://img.shields.io/badge/GUI-Tkinter-yellow">
+  <img src="https://img.shields.io/badge/Build-PyInstaller-orange">
 </p>
 
-A lightweight desktop application based on Python + Tkinter that converts PDF pages into highquality JPG images.
-Supports page selection, batch export, and is easy to use via GUI.
+一个基于 **Python + Tkinter** 的桌面应用工具，可将 PDF 文档快速转换为 JPG 图片。支持自定义页码导出、批量转换、可视化操作。
 
+---
 
+## 📚 目录（Table of Contents）
 
- 📚 Table of Contents
+* [🌟 功能特点](#-功能特点)
+* [🖼️ 软件界面截图](#️-软件界面截图)
+* [🚀 使用方法](#-使用方法)
+* [🔢 自定义页码规则](#-自定义页码规则)
+* [📦 打包成 EXE](#-打包成-exe)
+* [📁 项目结构](#-项目结构)
+* [📄 依赖说明](#-依赖说明)
+* [📦 GitHub Release 功能说明](#-github-release-功能说明)
+* [📄 开源协议](#-开源协议)
+* [👨‍💻 作者](#-作者)
+* [🇬🇧 English Version](#-english-version)
 
- [Features](features)
- [Screenshot](screenshot)
- [Usage](usage)
- [Custom Page Selection](custompageselection)
- [Build EXE](buildexe)
- [Project Structure](projectstructure)
- [Dependencies](dependencies)
- [Release Notes](releasenotes)
- [License](license)
- [Author](author)
+---
 
+## 🌟 功能特点
 
+✔ 支持 PDF → JPG 批量转换
+✔ 支持自定义导出页码（如：`1,3,5-8`）
+✔ 可一键全页导出
+✔ 输出文件夹可自定义
+✔ PDF 渲染质量高（基于 PyMuPDF）
+✔ 集成 GUI，操作简单
+✔ 可打包成 Windows 独立 EXE
 
- 🌟 Features
+---
 
-✔ Convert PDFs to JPG images
-✔ Supports custom page ranges (e.g., `1,3,58`)
-✔ Highquality PDF rendering
-✔ Easytouse Tkinter GUI
-✔ Fully offline
-✔ Can be packaged into a Windows EXE
+## 🖼️ 软件界面截图
 
-
-
- 🖼 Screenshot
+（你可以把图片放到 `assets/screenshot.png`）
 
 ```
-![App Screenshot](assets/screenshot.png)
+![软件界面示例](assets/screenshot.png)
 ```
 
+---
 
+## 🚀 使用方法
 
- 🚀 Usage
+### 方式一：运行 EXE（推荐）
 
- Method 1: Use the prebuilt EXE
+1. 到 **Releases** 页面下载最新版本
+2. 运行 `PDF转图片工具.exe`
+3. 选择 PDF
+4. 设置输出目录
+5. 点击【开始转换】
 
-1. Download the latest release from GitHub
-2. Run the `.exe` file
-3. Select your PDF
-4. Choose output folder
-5. Click Start
+---
 
+### 方式二：运行源码
 
-
- Method 2: Run from source
-
-Install dependencies:
+安装依赖：
 
 ```bash
-pip install r requirements.txt
+pip install -r requirements.txt
 ```
 
-Run:
+运行：
 
 ```bash
 python pdf_to_jpg_gui.py
 ```
 
+---
 
+## 🔢 自定义页码规则
 
- 🔢 Custom Page Selection
+| 输入          | 说明       |
+| ----------- | -------- |
+| `1`         | 仅导出第 1 页 |
+| `1-5`       | 导出 1~5 页 |
+| `2,4,8`     | 指定页      |
+| `3,6-10,12` | 混合组合     |
+| `all`       | 全部页      |
 
-| Input      | Meaning        |
-|  |  |
-| `1`        | Page 1         |
-| `16`      | Pages 1 to 6   |
-| `3,7,10`   | Specific pages |
-| `2,58,12` | Mixed format   |
-| `all`      | All pages      |
+---
 
-
-
- 📦 Build EXE
+## 📦 打包成 EXE
 
 ```bash
-pyinstaller F w i icon.ico n "PDFtoJPG" pdf_to_jpg_gui.py
+pyinstaller -F -w -i icon.ico -n "PDF转图片工具" pdf_to_jpg_gui.py
 ```
 
+> 如果提示 `Icon input file not found`，请确认 `icon.ico` 是否存在。
 
+---
 
- 📁 Project Structure
+## 📁 项目结构
 
 ```
-pdftojpgconverter/
+📁 PDF-to-JPG-Converter
  ├── pdf_to_jpg_gui.py
  ├── requirements.txt
  ├── README.md
@@ -117,41 +119,53 @@ pdftojpgconverter/
  └── assets/
 ```
 
+---
 
+## 📄 依赖说明
 
- 📄 Dependencies
+| 库           | 功能     |
+| ----------- | ------ |
+| **PyMuPDF** | PDF 渲染 |
+| **Pillow**  | 图片保存   |
+| **Tkinter** | GUI    |
 
- PyMuPDF
- Pillow
- Tkinter (builtin)
+---
 
+## 📦 GitHub Release 功能说明
 
+发布页内容可包含：
 
- 📦 Release Notes
+### 🆕 版本更新内容（示例）
 
-Release notes may include:
+* 新增：自定义页码批量导出
+* 优化：大 PDF 文件解析速度
+* 修复：某些 PDF 无法导出的问题
+* 新增：自动输出目录检测
 
- New feature: custom page selection
- Improved PDF rendering speed
- Bug fixes
- UI improvements
+### 📥 下载内容
 
-Downloads:
+* `PDF转图片工具.exe` —— Windows 64 位独立版本
+* `Source code.zip` —— 源码包
+* `Source code.tar.gz`
 
- EXE build
- Source code (.zip / .tar.gz)
+### ⚠️ 注意事项
 
+* 不需要安装 Python
+* 建议在 Windows 10/11 上运行
+* 如果杀毒软件误报，属于正常现象（PyInstaller 打包常见）
 
+---
 
- 📄 License
+## 📄 开源协议
 
-MIT License
+本项目采用 **MIT License**
 
+---
 
+## 👨‍💻 作者
 
- 👨‍💻 Author
-
-orangetect
+**orangetect**
 GitHub: [https://github.com/orangetect](https://github.com/orangetect)
 
-If this project helped you, please give it a ⭐ Star!
+欢迎提交 Issue 或 PR！
+如果对你有帮助，请点亮 ⭐Star！
