@@ -1,7 +1,7 @@
 # PDF to JPG Converter
 
 🌐 Languages:  
-[English](docs/en/README_EN.md) | [中文](docs/zh/README.md)
+[English](README_EN.md) | [中文](README.md)
 
 
 # 🇨🇳 中文 README（Simplified Chinese）
